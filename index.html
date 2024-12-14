@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tableau de dessin pour enfants</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Tableau de dessin</h1>
+  <div class="controls">
+    <button onclick="setColor('red')">Rouge</button>
+    <button onclick="setColor('blue')">Bleu</button>
+    <button onclick="setColor('green')">Vert</button>
+    <button onclick="setRandomColor()">Couleur aléatoire</button>
+    <button onclick="setLineWidth(2)">2px</button>
+    <button onclick="setLineWidth(5)">5px</button>
+    <button onclick="setLineWidth(10)">10px</button>
+    <button onclick="clearCanvas()">Effacer</button>
+    <button onclick="drawRandomLetter()">Lettre aléatoire</button>
+  </div>
+  <canvas id="drawingCanvas" width="800" height="400"></canvas>
+  <script src="main.js"></script>
+</body>
+</html>
